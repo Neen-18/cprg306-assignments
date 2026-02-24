@@ -101,3 +101,4 @@ export default function NewItem({ onAddItem }) {
       </button>
     </form>
   );
+}
