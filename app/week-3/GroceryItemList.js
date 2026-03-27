@@ -41,7 +41,7 @@ export default function GroceryItemList() {
   const item7 = {
     name: "pasta sauce 🍝",
     quantity: 3,
-    category: "canned goods",
+    category: "canned foods",
   };
   
   const item8 = {

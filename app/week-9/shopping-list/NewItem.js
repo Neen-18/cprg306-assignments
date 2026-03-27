@@ -87,8 +87,8 @@ export default function NewItem({ onAddItem }) {
             <option value="bakery">Bakery</option>
             <option value="meat">Meat</option>
             <option value="frozen foods">Frozen Foods</option>
-            <option value="canned foods">Canned Goods</option>
-            <option value="dry goods">Dry Goods</option>
+            <option value="canned foods">Canned Foods</option>
+            <option value="dry goods">Dry Foods</option>
             <option value="beverages">Beverages</option>
             <option value="snacks">Snacks</option>
             <option value="household">Household</option>
