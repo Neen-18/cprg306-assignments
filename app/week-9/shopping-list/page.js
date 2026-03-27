@@ -3,7 +3,7 @@
 import ItemList from './item-list';
 import NewItem from './NewItem';
 import itemsData from './items.json';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MealIdeas from './MealIdeas';
 import { useUserAuth } from '../../contexts/AuthContext';
 import { useRouter } from 'next/navigation'
@@ -15,8 +15,13 @@ export default function Page() {
 	const [items, setItems] = useState(itemsData);
 	const [selectedItemName, setSelectedItemName] = useState(null);
 
+	useEffect(() => {
+		if (!user) {
+			router.push('/week-9');
+		}
+	}, [user, router]);
+
 	if (!user) {
-		router.push('week-9')
 		return null;
 	}
 
